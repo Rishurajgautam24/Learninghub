@@ -32,32 +32,34 @@ last_modified_at: 2025-01-31
 ---
 
 ## **Test Statistic Formula**
-The Chi-Square statistic ($\chi^2$) measures the discrepancy between observed and expected frequencies:
+The Chi-Square statistic (\\(\chi^2\\)) measures the discrepancy between observed and expected frequencies:
 
-$\chi^2 = \sum_{i=1}^{k} \frac{(O_i - E_i)^2}{E_i}$
+$$
+\chi^2 = \sum_{i=1}^{k} \frac{(O_i - E_i)^2}{E_i}
+$$
 
 Where:
-- $O_i$ = Observed frequency in category $i$
-- $E_i$ = Expected frequency in category $i$
-- $k$ = Number of categories
+- \\(O_i\\) = Observed frequency in category \\(i\\)
+- \\(E_i\\) = Expected frequency in category \\(i\\)
+- \\(k\\) = Number of categories
 
 ### **Mathematical Steps**
-1. For each category $i$:
-   - Calculate difference: $(O_i - E_i)$
-   - Square the difference: $(O_i - E_i)^2$
-   - Divide by expected: $\frac{(O_i - E_i)^2}{E_i}$
+1. For each category \\(i\\):
+   - Calculate difference: \\((O_i - E_i)\\)
+   - Square the difference: \\((O_i - E_i)^2\\)
+   - Divide by expected: \\(\frac{(O_i - E_i)^2}{E_i}\\)
 2. Sum all terms
 
 ### **Degrees of Freedom**
-$df = k - 1 - m$
+\\[df = k - 1 - m\\]
 where:
-- $k$ = number of categories
-- $m$ = number of parameters estimated from the data
+- \\(k\\) = number of categories
+- \\(m\\) = number of parameters estimated from the data
 
 For our die example:
-- $k = 6$ (six faces)
-- $m = 0$ (no parameters estimated)
-- Therefore, $df = 6 - 1 - 0 = 5$
+- \\(k = 6\\) (six faces)
+- \\(m = 0\\) (no parameters estimated)
+- Therefore, \\(df = 6 - 1 - 0 = 5\\)
 
 ### **Critical Values Table (α = 0.05)**
 | df | Critical Value |
@@ -97,21 +99,21 @@ For a fair die, each category expects \( \frac{60}{6} = 10 \).
 ## **Detailed Calculation Example**
 For our die roll data:
 
-| Face | $O_i$ | $E_i$ | $(O_i - E_i)^2$ | $\frac{(O_i - E_i)^2}{E_i}$ |
-|------|-------|-------|-----------------|------------------------------|
-| 1    | 12    | 10    | 4              | 0.400                        |
-| 2    | 8     | 10    | 4              | 0.400                        |
-| 3    | 9     | 10    | 1              | 0.100                        |
-| 4    | 15    | 10    | 25             | 2.500                        |
-| 5    | 6     | 10    | 16             | 1.600                        |
-| 6    | 10    | 10    | 0              | 0.000                        |
-| Sum  | 60    | 60    | -              | 5.400                        |
+| Face | \\(O_i\\) | \\(E_i\\) | \\((O_i - E_i)^2\\) | \\(\frac{(O_i - E_i)^2}{E_i}\\) |
+|------|-----------|-----------|---------------------|----------------------------------|
+| 1    | 12        | 10        | 4                   | 0.400                           |
+| 2    | 8         | 10        | 4                   | 0.400                           |
+| 3    | 9         | 10        | 1                   | 0.100                           |
+| 4    | 15        | 10        | 25                  | 2.500                           |
+| 5    | 6         | 10        | 16                  | 1.600                           |
+| 6    | 10        | 10        | 0                   | 0.000                           |
+| Sum  | 60        | 60        | -                   | 5.400                           |
 
-Therefore, $\chi^2 = 5.400$
+Therefore, \\(\chi^2 = 5.400\\)
 
-With $df = 5$ and $\alpha = 0.05$:
+With \\(df = 5\\) and \\(\alpha = 0.05\\):
 - Critical value = 11.070
-- Since $5.400 < 11.070$, we fail to reject $H_0$
+- Since \\(5.400 < 11.070\\), we fail to reject \\(H_0\\)
 
 ---
 
@@ -157,8 +159,8 @@ plt.show()
 
 ## **Output Interpretation**
 - **Chi-Square Statistic:** 5.00
-- **$P-value$:** 0.4159
-- **Conclusion:** Since $ p \text{-value} > 0.05$, fail to reject \(H₀\). No evidence to suggest the die is unfair.
+- **\\(P\\)-value:** 0.4159
+- **Conclusion:** Since \\(p \text{-value} > 0.05\\), fail to reject \\(H_0\\). No evidence to suggest the die is unfair.
 
 ---
 
@@ -169,8 +171,8 @@ plt.show()
 ---
 
 ## **Limitations**
-- Requires sufficient expected frequencies ($≥5$ per category).
-- Sensitive to sample size; large samples may trivialize small deviations.
+- Requires sufficient expected frequencies (\\(\geq5\\) per category)
+- Sensitive to sample size; large samples may trivialize small deviations
 
 ---
 
