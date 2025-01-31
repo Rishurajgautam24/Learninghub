@@ -31,8 +31,8 @@ Hypothesis testing is a statistical method used to make inferences about a popul
    - Common values: 0.05 (5%) or 0.01 (1%).
 
 ### 4. **p-value**
-   - Probability of observing the sample data (or more extreme) **assuming $H_0$ is true**.
-   - **Decision Rule:** Reject $H_0$ if $p\text{-value} < \alpha$.
+   - Probability of observing the sample data (or more extreme) **assuming $`H_0`$ is true**.
+   - **Decision Rule:** Reject $`H_0`$ if $`p\text{-value} < \alpha`$.
 
 ### 5. **Test Statistic**
    - A standardized value (e.g., z-score, t-score) calculated from sample data to compare against a critical value.
@@ -65,8 +65,8 @@ Hypothesis testing is a statistical method used to make inferences about a popul
    - Examples: Mann-Whitney U test, Wilcoxon signed-rank test.
 
 ### 3. **One-Tailed vs. Two-Tailed Tests**
-   - **One-Tailed:** Tests for effect in **one direction** (e.g., $\mu > \mu_0$).
-   - **Two-Tailed:** Tests for effect in **both directions** (e.g., $\mu \neq \mu_0$).
+   - **One-Tailed:** Tests for effect in **one direction** (e.g., $`\mu > \mu_0`$).
+   - **Two-Tailed:** Tests for effect in **both directions** (e.g., $`\mu \neq \mu_0`$).
 
 ---
 
@@ -75,8 +75,10 @@ Hypothesis testing is a statistical method used to make inferences about a popul
 A company claims its light bulbs last 1200 hours. A sample of 50 bulbs has a mean lifespan of 1150 hours with a known population standard deviation of 150 hours. Test if the mean lifespan is less than 1200 hours at $\alpha = 0.05$.
 
 ### **Hypotheses**
-- $H_0: \mu = 1200$
-- $H_1: \mu < 1200$
+```math
+H_0: \mu = 1200
+H_1: \mu < 1200
+```
 
 ### **Python Code**
 ```python
@@ -124,14 +126,14 @@ plt.show()
 ---
 
 ## **Output Interpretation**
-- **Z-Score:** -3.33 (standard deviations from the mean under $H_0$).
-- **P-value:** 0.0004 (probability of observing a sample mean ≤ 1150 if $H_0$ is true).
-- **Conclusion:** Since $p\text{-value} < 0.05$, reject $H_0$. The data suggests the mean lifespan is less than 1200 hours.
+- **Z-Score:** -3.33 (standard deviations from the mean under $`H_0`$).
+- **P-value:** 0.0004 (probability of observing a sample mean ≤ 1150 if $`H_0`$ is true).
+- **Conclusion:** Since $`p\text{-value} < 0.05`$, reject $`H_0`$. The data suggests the mean lifespan is less than 1200 hours.
 
 ---
 
 ## **Visualization**
-![Z-Test Visualization](images/hypothesis-testing.png)  
+![Z-Test Visualization](../images/hypothesis-testing.png)  
 *(Actual plot shows sampling distribution under H₀, rejection region, and sample mean.)*
 
 ---

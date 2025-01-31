@@ -22,7 +22,7 @@ canonical_url: https://rishurajgautam24.github.io/Learninghub/
 3. [Hypothesis Testing](statistical-theory/hypothesis-testing.md)
 
 ## Statistical Tests
-1. [Chi-Square Test](statistical-theory/statistical-theory/chi-square-test-goodness-of-fit.md)
+1. [Chi-Square Test](statistical-theory/chi-square-test-goodness-of-fit.md)
 2. [Student's t-Test](statistical-theory/t-test.md)
 3. [ANOVA](statistical-theory/anova.md)
 
