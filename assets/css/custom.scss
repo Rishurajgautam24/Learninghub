@@ -1,0 +1,88 @@
+---
+---
+
+// Modern color palette
+:root {
+  --primary-color: #2962ff;
+  --secondary-color: #0039cb;
+  --text-color: #2c3e50;
+  --background-color: #ffffff;
+  --code-bg: #f8f9fa;
+  --border-color: #e9ecef;
+}
+
+// Typography
+body {
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  line-height: 1.7;
+  color: var(--text-color);
+}
+
+// Modern container
+.content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--background-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+// Enhanced headings
+h1, h2, h3, h4 {
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-top: 2em;
+}
+
+// Code blocks
+pre, code {
+  background: var(--code-bg);
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+}
+
+// Tables
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2em 0;
+  
+  th, td {
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+  }
+  
+  th {
+    background: var(--primary-color);
+    color: white;
+  }
+}
+
+// Math display
+.math-display {
+  padding: 1.5rem;
+  margin: 2rem 0;
+  background: var(--code-bg);
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+// Navigation
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  
+  a {
+    padding: 0.5rem 1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+    
+    &:hover {
+      background: var(--code-bg);
+    }
+  }
+}

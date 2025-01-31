@@ -3,13 +3,30 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Fira+Code&display=swap" rel="stylesheet">
     {% include mathjax.html %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
   </head>
   <body>
-    <div class="container-lg px-3 my-5 markdown-body">
-      {{ content }}
-    </div>
+    <nav class="top-nav">
+      <div class="content-wrapper">
+        <div class="nav-links">
+          <a href="{{ site.baseurl }}/">Home</a>
+          <a href="{{ site.baseurl }}/about">About</a>
+          <a href="{{ site.baseurl }}/contents">Contents</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="content-wrapper">
+      <article class="post">
+        {{ content }}
+      </article>
+    </main>
+
+    <footer class="site-footer content-wrapper">
+      <p>© {{ site.time | date: '%Y' }} {{ site.author }}. All rights reserved.</p>
+    </footer>
   </body>
 </html>
