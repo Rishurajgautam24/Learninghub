@@ -3,8 +3,8 @@ layout: default
 title: "Statistical Theory and Applications | Complete Python Guide"
 description: "Master statistical theory, hypothesis testing, and probability distributions with practical Python examples and detailed explanations"
 keywords: statistical theory, hypothesis testing, probability distributions, python statistics, data analysis
-author: Rishuraj Gautam
-canonical_url: https://yourdomain.com/
+author: Rishu Raj Gautam
+canonical_url: https://rishurajgautam24.github.io/Learninghub/
 ---
 
 # Statistical Theory and Python Applications

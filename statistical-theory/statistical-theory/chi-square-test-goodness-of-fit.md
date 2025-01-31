@@ -3,7 +3,7 @@ layout: default
 title: "Chi-Square Test for Goodness of Fit"
 description: "Learn how to perform and interpret Chi-Square Goodness of Fit tests with step-by-step Python implementation, formulas, and visualizations"
 keywords: chi-square test, goodness of fit test, statistical hypothesis testing, python statistics, data analysis
-author: Rishuraj Gautam
+author: Rishu Raj Gautam
 date: 2025-01-31
 last_modified_at: 2025-01-31
 ---
