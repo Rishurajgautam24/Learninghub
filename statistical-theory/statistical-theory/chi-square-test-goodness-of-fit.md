@@ -34,9 +34,9 @@ last_modified_at: 2025-01-31
 ## **Test Statistic Formula**
 The Chi-Square statistic (\\(\chi^2\\)) measures the discrepancy between observed and expected frequencies:
 
-$$
+\\[
 \chi^2 = \sum_{i=1}^{k} \frac{(O_i - E_i)^2}{E_i}
-$$
+\\]
 
 Where:
 - \\(O_i\\) = Observed frequency in category \\(i\\)
@@ -51,7 +51,7 @@ Where:
 2. Sum all terms
 
 ### **Degrees of Freedom**
-\\[df = k - 1 - m\\]
+\\(df = k - 1 - m\\)
 where:
 - \\(k\\) = number of categories
 - \\(m\\) = number of parameters estimated from the data
@@ -61,7 +61,7 @@ For our die example:
 - \\(m = 0\\) (no parameters estimated)
 - Therefore, \\(df = 6 - 1 - 0 = 5\\)
 
-### **Critical Values Table (α = 0.05)**
+### **Critical Values Table (\\(\alpha = 0.05\\))**
 | df | Critical Value |
 |----|---------------|
 | 1  | 3.841         |
@@ -73,18 +73,18 @@ For our die example:
 ---
 
 ## **Steps to Perform the Test**
-1. **Define Hypotheses:** State \(H₀\) and \(H₁\).
+1. **Define Hypotheses:** State \\(H₀\\) and \\(H₁\\).
 2. **Calculate Expected Frequencies:** Use theoretical distribution or equal probabilities.
 3. **Compute Chi-Square Statistic:** Apply the formula.
-4. **Determine Degrees of Freedom (df):** \(df = k - 1 - p\), where \(k\) = number of categories, \(p\) = parameters estimated.
+4. **Determine Degrees of Freedom (df):** \\(df = k - 1 - p\\), where \\(k\\) = number of categories, \\(p\\) = parameters estimated.
 5. **Find Critical Value or P-value:** Use Chi-Square distribution table or software.
-6. **Conclusion:** Reject \(H₀\) if \(\chi^2 > \text{critical value}\) or \(p\text{-value} < \alpha\).
+6. **Conclusion:** Reject \\(H₀\\) if \\(\chi^2 > \text{critical value}\\) or \\(p\text{-value} < \alpha\\).
 
 ---
 
 ## **Example: Testing Fairness of a Die**
 ### **Scenario**
-A die is rolled 60 times. Test if the die is fair at \(\alpha = 0.05\).
+A die is rolled 60 times. Test if the die is fair at \\(\alpha = 0.05\\).
 
 ### **Observed Frequencies**
 | Category | 1  | 2  | 3  | 4  | 5  | 6  |
@@ -92,7 +92,7 @@ A die is rolled 60 times. Test if the die is fair at \(\alpha = 0.05\).
 | Observed | 12 | 8  | 9  | 15 | 6  | 10 |
 
 ### **Expected Frequencies**
-For a fair die, each category expects \( \frac{60}{6} = 10 \).
+For a fair die, each category expects \\( \frac{60}{6} = 10 \\).
 
 ---
 
@@ -100,14 +100,14 @@ For a fair die, each category expects \( \frac{60}{6} = 10 \).
 For our die roll data:
 
 | Face | \\(O_i\\) | \\(E_i\\) | \\((O_i - E_i)^2\\) | \\(\frac{(O_i - E_i)^2}{E_i}\\) |
-|------|-----------|-----------|---------------------|----------------------------------|
-| 1    | 12        | 10        | 4                   | 0.400                           |
-| 2    | 8         | 10        | 4                   | 0.400                           |
-| 3    | 9         | 10        | 1                   | 0.100                           |
-| 4    | 15        | 10        | 25                  | 2.500                           |
-| 5    | 6         | 10        | 16                  | 1.600                           |
-| 6    | 10        | 10        | 0                   | 0.000                           |
-| Sum  | 60        | 60        | -                   | 5.400                           |
+|------|-------|-------|-----------------|------------------------------|
+| 1    | 12    | 10    | 4              | 0.400                        |
+| 2    | 8     | 10    | 4              | 0.400                        |
+| 3    | 9     | 10    | 1              | 0.100                        |
+| 4    | 15    | 10    | 25             | 2.500                        |
+| 5    | 6     | 10    | 16             | 1.600                        |
+| 6    | 10    | 10    | 0              | 0.000                        |
+| Sum  | 60    | 60    | -              | 5.400                        |
 
 Therefore, \\(\chi^2 = 5.400\\)
 
@@ -159,8 +159,8 @@ plt.show()
 
 ## **Output Interpretation**
 - **Chi-Square Statistic:** 5.00
-- **\\(P\\)-value:** 0.4159
-- **Conclusion:** Since \\(p \text{-value} > 0.05\\), fail to reject \\(H_0\\). No evidence to suggest the die is unfair.
+- **$P-value$:** 0.4159
+- **Conclusion:** Since \\( p \text{-value} > 0.05\\), fail to reject \\(H₀\\). No evidence to suggest the die is unfair.
 
 ---
 
@@ -171,8 +171,8 @@ plt.show()
 ---
 
 ## **Limitations**
-- Requires sufficient expected frequencies (\\(\geq5\\) per category)
-- Sensitive to sample size; large samples may trivialize small deviations
+- Requires sufficient expected frequencies ($≥5$ per category).
+- Sensitive to sample size; large samples may trivialize small deviations.
 
 ---
 

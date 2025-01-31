@@ -1,0 +1,21 @@
+
+---
+---
+
+@import "{{ site.theme }}";
+
+.MathJax_Display {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.math-display {
+  margin: 1em 0;
+  padding: 1em;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.math-inline {
+  padding: 0 0.2em;
+}
