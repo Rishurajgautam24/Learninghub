@@ -1,0 +1,42 @@
+# Site settings
+title: Statistical Testing with Chi-Square
+description: A comprehensive guide to Chi-Square Test for Goodness of Fit with examples and code
+author: Your Name
+
+# Build settings
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+# Theme settings
+theme: jekyll-theme-cayman
+show_downloads: false
+
+# MathJax settings
+mathjax:
+  enable: true
+  config: 'TeX-AMS-MML_HTMLorMML'
+
+# SEO settings
+seo:
+  name: Chi-Square Test for Goodness of Fit
+  type: WebPage
+
+# Navigation
+header_pages:
+  - index.md
+  - about.md
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
