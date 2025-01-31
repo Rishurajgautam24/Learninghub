@@ -6,6 +6,8 @@ keywords: chi-square test, goodness of fit test, statistical hypothesis testing,
 author: Rishu Raj Gautam
 date: 2025-01-31
 last_modified_at: 2025-01-31
+math: true
+toc: true
 ---
 
 # Chi-Square Test for Goodness of Fit: Complete Guide with Python
@@ -34,7 +36,7 @@ last_modified_at: 2025-01-31
 ## **Test Statistic Formula**
 The Chi-Square statistic ($\chi^2$) measures the discrepancy between observed and expected frequencies:
 
-$\chi^2 = \sum_{i=1}^{k} \frac{(O_i - E_i)^2}{E_i}$
+$$\chi^2 = \sum_{i=1}^{k} \frac{(O_i - E_i)^2}{E_i}$$
 
 Where:
 - $O_i$ = Observed frequency in category $i$
@@ -49,7 +51,7 @@ Where:
 2. Sum all terms
 
 ### **Degrees of Freedom**
-$df = k - 1 - m$
+$$df = k - 1 - m$$
 where:
 - $k$ = number of categories
 - $m$ = number of parameters estimated from the data
@@ -71,12 +73,12 @@ For our die example:
 ---
 
 ## **Steps to Perform the Test**
-1. **Define Hypotheses:** State \(H₀\) and \(H₁\).
-2. **Calculate Expected Frequencies:** Use theoretical distribution or equal probabilities.
-3. **Compute Chi-Square Statistic:** Apply the formula.
-4. **Determine Degrees of Freedom (df):** \(df = k - 1 - p\), where \(k\) = number of categories, \(p\) = parameters estimated.
-5. **Find Critical Value or P-value:** Use Chi-Square distribution table or software.
-6. **Conclusion:** Reject \(H₀\) if \(\chi^2 > \text{critical value}\) or \(p\text{-value} < \alpha\).
+1. **Define Hypotheses:** State $H_0$ and $H_1$
+2. **Calculate Expected Frequencies:** Use theoretical distribution or equal probabilities
+3. **Compute Chi-Square Statistic:** Apply the formula
+4. **Determine Degrees of Freedom (df):** $df = k - 1 - p$, where $k$ = number of categories, $p$ = parameters estimated
+5. **Find Critical Value or P-value:** Use Chi-Square distribution table or software
+6. **Conclusion:** Reject $H_0$ if $\chi^2 > \text{critical value}$ or $p\text{-value} < \alpha$
 
 ---
 
@@ -157,8 +159,8 @@ plt.show()
 
 ## **Output Interpretation**
 - **Chi-Square Statistic:** 5.00
-- **$P-value$:** 0.4159
-- **Conclusion:** Since $ p \text{-value} > 0.05$, fail to reject \(H₀\). No evidence to suggest the die is unfair.
+- **P-value:** 0.4159
+- **Conclusion:** Since $p\text{-value} > 0.05$, fail to reject $H_0$. No evidence to suggest the die is unfair.
 
 ---
 
