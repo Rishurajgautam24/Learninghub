@@ -1,7 +1,7 @@
 # Site settings
 title: "Statistical Testing in Python: Complete Guide and Examples"
 tagline: "Master Statistical Analysis with Python: From Theory to Practice"
-description: "Comprehensive guide to statistical testing in Python with practical examples"
+description: "Comprehensive guide to statistical testing in Python with practical examples, code snippets, and detailed explanations for data scientists and analysts"
 author: Rishuraj Gautam
 lang: en
 
@@ -12,21 +12,13 @@ kramdown:
   syntax_highlighter: rouge
 
 # Theme settings
-theme: jekyll-theme-minimal
-show_downloads: true
-logo: /assets/images/logo.png
+theme: jekyll-theme-cayman
+show_downloads: false
 
 # MathJax settings
 mathjax:
   enable: true
-  config: |
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [['$','$'], ['\\(','\\)']],
-        displayMath: [['$$','$$'], ['\\[','\\]']],
-        processEscapes: true
-      }
-    })
+  config: 'TeX-AMS-MML_HTMLorMML'
 
 # SEO Optimization
 seo:
@@ -72,14 +64,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
-
-# GitHub information
-github:
-  is_project_page: true
-  repository_url: "https://github.com/Rishurajgautam24/statistical-theory"
-  repository_name: "statistical-theory"
-  owner_url: "https://github.com/Rishurajgautam24"
-  owner_name: "Rishuraj Gautam"
+  - jekyll-redirect-from
 
 # Exclude files from processing
 exclude:
