@@ -165,7 +165,7 @@ plt.show()
 ---
 
 ## **Visualization**
-![Observed vs Expected Frequencies](images/download.png)  
+![Observed vs Expected Frequencies](images/chi-sqaure test.png)  
 *(Actual plot will show blue bars for observed and orange bars for expected frequencies.)*
 
 ---

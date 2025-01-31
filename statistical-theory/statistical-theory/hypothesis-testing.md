@@ -131,7 +131,7 @@ plt.show()
 ---
 
 ## **Visualization**
-![Z-Test Visualization](https://via.placeholder.com/600x400/CCCCCC/808080?text=Sampling+Distribution+with+Rejection+Region)  
+![Z-Test Visualization](images/hypothesis-testing.png)  
 *(Actual plot shows sampling distribution under H₀, rejection region, and sample mean.)*
 
 ---
