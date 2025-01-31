@@ -1,7 +1,9 @@
 # Site settings
-title: Statistical Testing with Chi-Square
-description: A comprehensive guide to Chi-Square Test for Goodness of Fit with examples and code
-author: Your Name
+title: "Statistical Testing in Python: Complete Guide and Examples"
+tagline: "Master Statistical Analysis with Python: From Theory to Practice"
+description: "Comprehensive guide to statistical testing in Python with practical examples, code snippets, and detailed explanations for data scientists and analysts"
+author: Rishuraj Gautam
+lang: en
 
 # Build settings
 markdown: kramdown
@@ -18,10 +20,39 @@ mathjax:
   enable: true
   config: 'TeX-AMS-MML_HTMLorMML'
 
-# SEO settings
+# SEO Optimization
 seo:
-  name: Chi-Square Test for Goodness of Fit
-  type: WebPage
+  name: "Statistical Testing in Python"
+  type: WebSite
+  links:
+    - https://twitter.com/rish_is_here
+    - https://github.com/Rishurajgautam24
+  image: /assets/images/logo.png
+  publisher:
+    name: Rishu Raj Gautam
+    logo: /assets/images/logo.png
+
+# Enhanced metadata
+twitter:
+  username: rish_is_here
+  card: summary_large_image
+social:
+  name: Rishu Raj Gautam
+  links:
+    - https://twitter.com/rish_is_here
+    - https://github.com/Rishurajgautam24
+    - https://linkedin.com/in/rishurajgautam
+
+# Google Analytics
+google_analytics: UA-XXXXXXXXX-X
+
+# Sitemap settings
+sitemap:
+  filename: "/sitemap.xml"
+  exclude:
+    - "/atom.xml"
+    - "/feed.xml"
+    - "/feed/index.xml"
 
 # Navigation
 header_pages:
@@ -33,6 +64,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-redirect-from
 
 # Exclude files from processing
 exclude:

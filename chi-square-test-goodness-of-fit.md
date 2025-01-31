@@ -1,8 +1,16 @@
-# Chi-Square Test for Goodness of Fit
-
-The **Chi-Square Test for Goodness of Fit** is a statistical hypothesis test used to determine whether observed categorical data follows an expected theoretical distribution. It compares observed frequencies to expected frequencies to assess if deviations are statistically significant.
-
 ---
+layout: default
+title: "Chi-Square Test for Goodness of Fit"
+description: "Learn how to perform and interpret Chi-Square Goodness of Fit tests with step-by-step Python implementation, formulas, and visualizations"
+keywords: chi-square test, goodness of fit test, statistical hypothesis testing, python statistics, data analysis
+author: Rishuraj Gautam
+date: 2025-01-31
+last_modified_at: 2025-01-31
+---
+
+# Chi-Square Test for Goodness of Fit: Complete Guide with Python
+
+> **Quick Summary**: Learn how to perform Chi-Square Goodness of Fit tests to validate categorical data distributions. Includes Python implementation, practical examples, and visual interpretations.
 
 ## **Purpose**
 - Test whether a sample dataset matches a population with a specific distribution.
@@ -168,4 +176,11 @@ plt.show()
 
 ## **Conclusion**
 The Chi-Square Goodness of Fit test is a non-parametric method to validate hypotheses about distributions. It is widely used in quality control, genetics, and social sciences to test theoretical models against empirical data.
+
+**Related Articles:**
+- [Understanding P-Values in Statistical Testing](./p-values.md)
+- [Practical Guide to Hypothesis Testing](./hypothesis-testing.md)
+- [Statistical Distribution Types Explained](./distributions.md)
+
+**Keywords**: chi-square test, goodness of fit, statistical analysis, python statistics, categorical data analysis, hypothesis testing
 
