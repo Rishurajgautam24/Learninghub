@@ -29,6 +29,7 @@ toc: true
    - Example: `call_data = [(9:00, 3min), (9:05, 4min), ...]`
 
 2. **Bank Queue Management**:
+
    ```python
    # Sample trace-driven simulation
    import pandas as pd
