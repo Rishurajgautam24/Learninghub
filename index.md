@@ -24,5 +24,5 @@ canonical_url: https://rishurajgautam24.github.io/Learninghub/
 1. [Chi-Square Test](statistical-theory/chi-square-test-goodness-of-fit.md)
 
 ## Business Analytics Course
-1. [Probability Distribution Notes](Business Analytics Course/index.md)
+1. [Probability Distribution](Business Analytics Course/index.md)
 
