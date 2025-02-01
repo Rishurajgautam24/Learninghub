@@ -9,6 +9,9 @@ last_modified_at: 2025-01-31
 math: true
 toc: true
 ---
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js">
+</script>
 
 # Hypothesis Testing Fundamentals
 
