@@ -30,7 +30,7 @@ A **probability distribution** is a statistical function that describes all the 
 
 Imagine you are rolling a six-sided die:
 - Each face (1 to 6) has an equal probability of landing face up.
-- The probability distribution for this die is uniform, meaning each outcome has a probability of $\( \frac{1}{6} \)$.
+- The probability distribution for this die is uniform, meaning each outcome has a probability of $$\frac{1}{6}$$.
 
 
 In real life, probability distributions help us model and predict outcomes, such as:

@@ -34,8 +34,8 @@ Hypothesis testing is a statistical method used to make inferences about a popul
    - Common values: 0.05 (5%) or 0.01 (1%).
 
 ### 4. **p-value**
-   - Probability of observing the sample data (or more extreme) **assuming $`H_0`$ is true**.
-   - **Decision Rule:** Reject $`H_0`$ if $`p\text{-value} < \alpha`$.
+   - Probability of observing the sample data (or more extreme) **assuming $$H_0$$ is true**.
+   - **Decision Rule:** Reject $$H_0$$ if $$p\text{-value} < \alpha$$.
 
 ### 5. **Test Statistic**
    - A standardized value (e.g., z-score, t-score) calculated from sample data to compare against a critical value.
@@ -68,8 +68,8 @@ Hypothesis testing is a statistical method used to make inferences about a popul
    - Examples: Mann-Whitney U test, Wilcoxon signed-rank test.
 
 ### 3. **One-Tailed vs. Two-Tailed Tests**
-   - **One-Tailed:** Tests for effect in **one direction** (e.g., $`\mu > \mu_0`$).
-   - **Two-Tailed:** Tests for effect in **both directions** (e.g., $`\mu \neq \mu_0`$).
+   - **One-Tailed:** Tests for effect in **one direction** (e.g., $$\mu > \mu_0$$).
+   - **Two-Tailed:** Tests for effect in **both directions** (e.g., $$\mu \neq \mu_0$$).
 
 ---
 
@@ -129,9 +129,9 @@ plt.show()
 ---
 
 ## **Output Interpretation**
-- **Z-Score:** -3.33 (standard deviations from the mean under $`H_0`$).
-- **P-value:** 0.0004 (probability of observing a sample mean ≤ 1150 if $`H_0`$ is true).
-- **Conclusion:** Since $`p\text{-value} < 0.05`$, reject $`H_0`$. The data suggests the mean lifespan is less than 1200 hours.
+- **Z-Score:** -3.33 (standard deviations from the mean under $$H_0$$).
+- **P-value:** 0.0004 (probability of observing a sample mean ≤ 1150 if $$H_0$$ is true).
+- **Conclusion:** Since $$p\text{-value} < 0.05$$, reject $$H_0$$. The data suggests the mean lifespan is less than 1200 hours.
 
 ---
 
