@@ -4,8 +4,8 @@ title: "How Businesses Use Data: Methods & Distributions"
 description: "Explore how businesses use data through trace-driven simulation, theoretical distribution fitting, and empirical distribution methods with examples and Python code."
 keywords: data usage, business analytics, trace-driven simulation, theoretical distribution, empirical distribution, Python
 author: Rishu Raj Gautam
-date: 2025-01-31
-last_modified_at: 2025-01-31
+date: 2025-02-01
+last_modified_at: 2025-02-01
 math: true
 toc: true
 ---
@@ -75,6 +75,7 @@ toc: true
 ### Practical Applications:
 
 1. **Customer Purchase Analysis**:
+
 ```python
 from scipy import stats
 
@@ -88,6 +89,7 @@ prob_high_purchase = 1 - stats.lognorm.cdf(100, *params)
 ```
 
 2. **Manufacturing Quality Control**:
+
 ```python
 # Tolerance limits using normal distribution
 measurements = np.random.normal(100, 2, 1000)  # parts dimensions
@@ -99,6 +101,7 @@ print(f"Control limits: {lower_limit:.2f} to {upper_limit:.2f}")
 ```
 
 ### Distribution Selection Guide:
+
 | Data Type | Recommended Distribution | Example Use Case |
 |-----------|------------------------|------------------|
 | Wait Times | Exponential | Customer service queues |
@@ -138,6 +141,7 @@ where $$p_i$$ is the probability of interval $$i$$.
 ### Advanced Applications:
 
 1. **Bootstrap Sampling**:
+
 ```python
 def bootstrap_mean(data, n_samples=1000):
     means = []
@@ -148,9 +152,9 @@ def bootstrap_mean(data, n_samples=1000):
 ```
 
 2. **Kernel Density Estimation**:
+
 ```python
 from scipy.stats import gaussian_kde
-
 # Smooth empirical distribution
 data = np.random.lognormal(0, 0.5, 1000)
 kde = gaussian_kde(data)
@@ -173,6 +177,7 @@ Modeling restaurant wait times using empirical data collected over a month.
 
 ## **Comparison of Approaches**
 
+
 | Factor                | Theoretical Distribution (Approach 2) | Empirical Distribution (Approach 3) |
 |-----------------------|----------------------------------------|--------------------------------------|
 | **Extrapolation**     | ✅ Possible (e.g., extreme values)     | ❌ Not possible                      |
@@ -185,6 +190,7 @@ Modeling restaurant wait times using empirical data collected over a month.
 
 ### 1. Theoretical Distribution (Normal)
 **Python Code**:
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -206,6 +212,7 @@ plt.show()
 
 ### 2. Empirical Distribution (Stepwise CDF)
 **Python Code**:
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -226,6 +233,7 @@ plt.show()
 Add these plots to demonstrate distribution comparisons:
 
 1. **Theoretical vs Empirical Fit**:
+
 ```python
 def plot_distribution_comparison(data, dist_name='normal'):
     # Plot empirical vs fitted theoretical distribution
@@ -252,6 +260,7 @@ def plot_distribution_comparison(data, dist_name='normal'):
 
 ## **When to Use Each Method?**
 
+
 | Method                  | Best For                                   | Avoid When                          |
 |-------------------------|--------------------------------------------|-------------------------------------|
 | **Trace-Driven**        | Replicating exact historical scenarios     | Modeling rare/unobserved events     |
@@ -262,6 +271,7 @@ def plot_distribution_comparison(data, dist_name='normal'):
 
 ### 1. **Mixture Models**:
 When data comes from multiple sources:
+
 ```python
 from sklearn.mixture import GaussianMixture
 
@@ -271,6 +281,7 @@ gmm.fit(data.reshape(-1, 1))
 ```
 
 ### 2. **Time Series Components**:
+
 ```python
 from statsmodels.tsa.seasonal import seasonal_decompose
 
