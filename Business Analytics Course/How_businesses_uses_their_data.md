@@ -229,6 +229,8 @@ plt.ylabel('F(x)')
 plt.show()
 ```
 
+![Empirical Distribution](images/empirical_CDF.png)
+
 ### Visual Comparisons:
 
 Add these plots to demonstrate distribution comparisons:
@@ -254,8 +256,6 @@ def plot_distribution_comparison(data, dist_name='normal'):
     plt.legend()
     plt.show()
 ```
-
-![Uniform Distribution](images/empirical_CDF.png)
 
 ---
 
