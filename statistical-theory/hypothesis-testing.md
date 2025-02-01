@@ -78,10 +78,9 @@ Hypothesis testing is a statistical method used to make inferences about a popul
 A company claims its light bulbs last 1200 hours. A sample of 50 bulbs has a mean lifespan of 1150 hours with a known population standard deviation of 150 hours. Test if the mean lifespan is less than 1200 hours at $$\alpha = 0.05$$.
 
 ### **Hypotheses**
-```math
-H_0: \mu = 1200
-H_1: \mu < 1200
-```
+
+$$H_0: \mu = 1200$$
+$$H_1: \mu < 1200$$
 
 ### **Python Code**
 ```python

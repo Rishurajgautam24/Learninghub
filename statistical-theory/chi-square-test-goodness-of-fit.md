@@ -40,9 +40,8 @@ toc: true
 ## **Test Statistic Formula**
 The Chi-Square statistic ($$\chi^2$$) measures the discrepancy between observed and expected frequencies:
 
-```math
-\chi^2 = \sum_{i=1}^{k} \frac{(O_i - E_i)^2}{E_i}
-```
+
+$$\chi^2 = \sum_{i=1}^{k} \frac{(O_i - E_i)^2}{E_i}$$
 
 Where:
 - $$O_i$$ = Observed frequency in category $$i$$
@@ -57,9 +56,8 @@ Where:
 2. Sum all terms
 
 ### **Degrees of Freedom**
-```math
-df = k - 1 - m
-```
+
+$$df = k - 1 - m$$
 where:
 - $$k$$ = number of categories
 - $$m$$ = number of parameters estimated from the data
