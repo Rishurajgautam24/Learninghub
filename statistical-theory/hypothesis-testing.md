@@ -54,7 +54,7 @@ Hypothesis testing is a statistical method used to make inferences about a popul
 5. **Determine Critical Value or p-value:**
    - Compare the test statistic to a critical value from statistical tables.
    - Alternatively, calculate the p-value.
-6. **Make a Decision:** Reject H₀ if the test statistic falls in the rejection region or \( p\text{-value} < \alpha \).
+6. **Make a Decision:** Reject H₀ if the test statistic falls in the rejection region or $$ p\text{-value} < \alpha $$.
 
 ---
 
@@ -75,7 +75,7 @@ Hypothesis testing is a statistical method used to make inferences about a popul
 
 ## **Example: Z-Test for Population Mean**
 ### **Scenario**
-A company claims its light bulbs last 1200 hours. A sample of 50 bulbs has a mean lifespan of 1150 hours with a known population standard deviation of 150 hours. Test if the mean lifespan is less than 1200 hours at $\alpha = 0.05$.
+A company claims its light bulbs last 1200 hours. A sample of 50 bulbs has a mean lifespan of 1150 hours with a known population standard deviation of 150 hours. Test if the mean lifespan is less than 1200 hours at $$\alpha = 0.05$$.
 
 ### **Hypotheses**
 ```math
@@ -142,7 +142,7 @@ plt.show()
 ---
 
 ## **Common Misconceptions**
-1. **"p-value is the probability $H_0$ is true":** Incorrect. p-value measures data compatibility with $H_0$.
+1. **"p-value is the probability $$H_0$$ is true":** Incorrect. p-value measures data compatibility with $$H_0$$.
 2. **"Statistical significance implies practical importance":** Not necessarily. Large samples may detect trivial effects.
 
 ---
