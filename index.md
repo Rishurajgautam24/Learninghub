@@ -13,19 +13,19 @@ canonical_url: https://rishurajgautam24.github.io/Learninghub/
 
 ## Quick Navigation
 - [🎯 Hypothesis Testing Fundamentals](statistical-theory/hypothesis-testing.md)
-- [📊 Statistical Distributions Guide](statistical-theory/statistical-distributions.md)
-- [🔍 Chi-Square Test Tutorial](statistical-theory/chi-square-test.md)
+<!-- - [📊 Statistical Distributions Guide](statistical-theory/statistical-distributions.md) -->
+- [🔍 Chi-Square Test Tutorial](statistical-theory/chi-square-test-goodness-of-fit.md)
 
-## Foundational Concepts
+<!-- ## Foundational Concepts
 1. [Probability Theory](statistical-theory/probability-theory.md)
 2. [Statistical Distributions](statistical-theory/statistical-distributions.md)
-3. [Hypothesis Testing](statistical-theory/hypothesis-testing.md)
+3. [Hypothesis Testing](statistical-theory/hypothesis-testing.md) -->
 
 ## Statistical Tests
 1. [Chi-Square Test](statistical-theory/chi-square-test-goodness-of-fit.md)
-2. [Student's t-Test](statistical-theory/t-test.md)
-3. [ANOVA](statistical-theory/anova.md)
+<!-- 2. [Student's t-Test](statistical-theory/t-test.md) -->
+<!-- 3. [ANOVA](statistical-theory/anova.md) -->
 
 ## Business Analytics Course
-1. [Probability Distribution Notes](Business Analytics Course/probability_distribution.md)
+1. [Probability Distribution Notes](Business Analytics Course/index.md)
 
