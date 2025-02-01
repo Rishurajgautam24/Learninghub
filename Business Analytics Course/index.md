@@ -10,4 +10,5 @@ author: Rishu Raj Gautam
 
 ## Course Contents
 1. [Probability Distribution](probability_distribution.md)
+2. [How Businesses Use Data: Methods & Distributions](How_businesses_uses_their_data.md)
 
