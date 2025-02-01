@@ -10,6 +10,10 @@ math: true
 toc: true
 ---
 
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 # Chi-Square Test for Goodness of Fit: Complete Guide with Python
 
 > **Quick Summary**: Learn how to perform Chi-Square Goodness of Fit tests to validate categorical data distributions. Includes Python implementation, practical examples, and visual interpretations.

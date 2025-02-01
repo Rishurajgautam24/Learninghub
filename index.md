@@ -26,3 +26,6 @@ canonical_url: https://rishurajgautam24.github.io/Learninghub/
 2. [Student's t-Test](statistical-theory/t-test.md)
 3. [ANOVA](statistical-theory/anova.md)
 
+## Business Analytics Course
+1. [Probability Distribution Notes](Business Analytics Course/probability_distribution.md)
+
