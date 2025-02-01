@@ -127,8 +127,8 @@ Modeling insurance claim amounts using an exponential distribution with $$\lambd
    This creates a stepwise CDF.  
 
 ### **Grouped Data**:
-For intervals (e.g., $$[a_0, a_1), [a_1, a_2), \dots$$):  
-**CDF Formula** (Piecewise linear):  
+1. Form intervals (e.g., $$[a_0, a_1), [a_1, a_2), \dots$$):  
+2. **CDF Formula** (Piecewise linear):  
 $$
 F(x) = 
 \begin{cases}
